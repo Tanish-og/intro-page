@@ -74,11 +74,88 @@ li{
     text-transform: uppercase;
     color: var(--black);
     font-family: "Poppins",sans-serif;
-    transition: color 0.3sec linear;
+   
+    transition: opacity 0.3s ease, color 0.3s ease;
+    
+    
+
 
 }
 .navbar-link:hover,
 .navbar-link:active{
     color: var(--helper);
     
+    
+}
+
+/* reusable codes */
+.section{
+    padding: 8rem 0;
+    
+}
+.btn{
+    background: var(--gradientSupport);
+    padding: 1.3rem 3.2rem;
+    border: none;
+    color: var(--helper-tint);
+    display: inline-block;
+    text-transform: uppercase;
+    font-size: 1.9rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.3sec ease;
+}
+.btn:hover,
+.btn:active{
+    box-shadow: 6px 9px 5px 4px rgb(51 51 61 / 51%);;
+}
+.grid{
+    display: grid;
+    gap:5rem;
+}
+.two-grid-column{
+    grid-template-columns: 1fr 1fr;
+}
+.section-hero{
+    background-color: var(--bg);
+    
+}
+/* HERO section starts */
+.data-column{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 9rem;
+    align-items: flex-start;
+}
+.hero{
+    margin: 0 auto;
+}
+.hero-image{
+    max-width: 65%;
+    /* max-height: 92%; */
+    /* aspect-ratio: 2/3; */
+    border: none; 
+    
+}
+.hero-data-top{
+    text-transform: uppercase;
+    font-weight: 500;
+    font-size: 1.5rem;
+    color: var(--helper);
+}
+.hero-data-name{
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 6.4rem;
+}
+.hero-data-para{
+    margin-top: 1.5rem;
+    margin-bottom: 5rem;
+    max-width: 60rem;
+}
+.image-column{
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
